@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagenes/icono.png" />
+    <style>
+        body {
+            color: white;
+            background-color: #333;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            padding: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Compra</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Detalles de la Compra</h2>
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="Hamburguesa Clasica">Hamburguesa Clasica - $80.00</option>
+                <option value="Hamburguesa Deluxe">Hamburguesa Deluxe - $95.00</option>
+                <option value="Hamburguesa Doble">Hamburguesa Doble - $110.00</option>
+                <option value="Hamburguesa Vegetariana">Hamburguesa Vegetariana - $70.00</option>
+                <option value="Burrito Clasico">Burrito Clasico - $60.00</option>
+                <option value="Burrito Vegetariano">Burrito Vegetariano - $75.00</option>
+                <option value="Burrito de Pollo">Burrito de Pollo - $85.00</option>
+                <option value="Burrito de Chorizo">Burrito de Chorizo - $70.00</option>
+                <option value="Ensalada">Ensalada - $150.00</option>
+                <option value="Ensalada Caesar">Ensalada Caesar - $90.00</option>
+                <option value="Papas Fritas">Papas Fritas - $45.00</option>
+                <option value="Alitas de Pollo">Alitas de Pollo - $80.00</option>
+            </select>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <button type="submit">Realizar Compra</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 La Burger</p>
+    </footer>
+</body>
+</html>
